@@ -3,12 +3,12 @@
   --bg-header: #00779c;
   --clr-text-white: #fff;
   --clr-text-black: #000;
-  --clr-bg-dark: #000E34;
+  --clr-bg-dark: #000e34;
   --clr-bg-light: #9c53f3;
-  --clr-card-body: #0077FF;
+  --clr-card-body: #0077ff;
   --clr-card-body-dark: #003898;
-  --clr-sapn: #00FFFF;
-  --clr-pc-screen: #005D80;
+  --clr-sapn: #00ffff;
+  --clr-pc-screen: #005d80;
   --clr-footer-bg: #00113e;
 }
 
@@ -26,7 +26,7 @@
 
 #header a {
   color: var(--clr-text-white);
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #header .navbar-nav .bell {
@@ -51,25 +51,20 @@
 
 /* Hero section styles */
 #hero {
-  background: linear-gradient(-43deg, #07558f 0%, #0b5490 38.72%, #ff00c4 100%);
-  position: relative;
-  padding: 200px 0 !important;
-}
-
-#hero::after {
-  top: 0;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
   background-image: url(/assets/images/heroEfect.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: 0.1;
+  position: relative;
+}
+#hero .img-wrap {
+  background: linear-gradient(-43deg, #07558f 0%, #0b5490 38.72%, #ff00c4 100%);
+  width: 100%;
+  padding: 200px 0 !important;
+  opacity: 0.9;
 }
 
-#hero::before {
+#hero::after {
   bottom: -11px;
   content: "";
   position: absolute;
@@ -84,7 +79,7 @@
 
 #hero .content h1 {
   font-size: 55px;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 #hero .content h1 span {
@@ -95,6 +90,9 @@
   background-color: var(--clr-bg-dark);
   border-radius: 50px 10px 10px 50px;
 }
+#hero .icons .item p {
+  font-size: 24px;
+}
 
 #hero .icons .item .swipe {
   background-color: var(--clr-bg-light);
@@ -103,20 +101,25 @@
 }
 
 #hero .content p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 /* Project section styles */
-#projects .p-head button i{
+#projects .p-head button i {
   background: var(--clr-text-white);
-    width: 36px;
-    height: 36px;
-    line-height: 36px;
-    border-radius: 50%;
-
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  border-radius: 50%;
 }
 #projects {
-  background: linear-gradient(180deg, #000e34 0.00%, #071740 33.88%, #2e437c 57.41%, #4961a4 100.00%);
+  background: linear-gradient(
+    180deg,
+    #000e34 0%,
+    #071740 33.88%,
+    #2e437c 57.41%,
+    #4961a4 100%
+  );
   padding-top: 90px;
   padding-bottom: 131px;
 }
@@ -126,13 +129,13 @@
 }
 
 #projects .p-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #projects .p-btn {
   background-image: linear-gradient(to right, #cb00c4, #6e00ff);
   font-size: 25px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #projects .img-box {
@@ -166,7 +169,7 @@
 
 #projects .wrapper {
   margin-top: 188px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #projects .wrapper .content {
@@ -202,30 +205,26 @@
 
 /* Join us section styles */
 #join-us {
-  background: linear-gradient(-46deg, #7c3fce 0.00%, #370067 100.00%);
-  position: relative;
-  font-family: 'Poppins', sans-serif;
-}
-
-#join-us::after {
-  top: 0;
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
   background-image: url(/assets/images/JoinUsBg.png);
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.1;
+  font-family: "Poppins", sans-serif;
+}
+
+#join-us .img-wrap {
+  background: linear-gradient(-46deg, #7c3fce 0%, #370067 100%);
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
 }
 
 #join-us .content button {
-  background: linear-gradient(90deg, #cb00c4 0.00%, #6e00ff 100.00%);
+  background: linear-gradient(90deg, #cb00c4 0%, #6e00ff 100%);
   font-size: 21px;
 }
 
 #join-us .img-box {
-  background: linear-gradient(140deg, #df00df 0.00%, #00ffdc 100.00%);
+  background: linear-gradient(140deg, #df00df 0%, #00ffdc 100%);
 }
 
 #join-us .content .wrap span {
@@ -236,7 +235,7 @@
 #footer {
   background-color: var(--clr-footer-bg);
   padding: 26px 27px;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 18px;
 }
 
@@ -245,8 +244,9 @@
 }
 
 /* Media queries for smaller screens */
-@media only screen and (max-width: 496px) {
-  #hero .content h1, h1 > span {
+@media only screen and (max-width: 645px) {
+  #hero .content h1,
+  h1 > span {
     font-size: 50px !important;
   }
 
@@ -257,4 +257,25 @@
   #header .navbar-nav .bell {
     padding: 8px 22px !important;
   }
+  p{
+    font-size: 16px !important ;
+  }
+  button{
+    font-size: 18px !important ;
+  }
+  #footer ul li{
+    font-size: 16px !important;
+  }
+}
+@media only screen and (max-width: 986px) {
+  p{
+    font-size: 18px;
+  }
+  #hero .icons .item p {
+    font-size: 18px;
+  }
+  button{
+    font-size: 22px;
+  }
+ 
 }
