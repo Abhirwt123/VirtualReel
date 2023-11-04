@@ -257,25 +257,24 @@
   #header .navbar-nav .bell {
     padding: 8px 22px !important;
   }
-  p{
+  p {
     font-size: 16px !important ;
   }
-  button{
+  button {
     font-size: 18px !important ;
   }
-  #footer ul li{
+  #footer ul li {
     font-size: 16px !important;
   }
 }
 @media only screen and (max-width: 986px) {
-  p{
+  p {
     font-size: 18px;
   }
   #hero .icons .item p {
     font-size: 18px;
   }
-  button{
+  button {
     font-size: 22px;
   }
- 
 }
