@@ -18,7 +18,9 @@
   background-repeat: no-repeat;
   background-position: center;
 }
-
+.container{
+  overflow: hidden !important;
+}
 /* Header section styles */
 #header {
   background-color: var(--bg-header);
